@@ -203,7 +203,58 @@
                         </form>
                     </div>
                 </div>
+                <div class="col-md-3"></div>
         </div>
+        <section id="yourorder">
+            <div class="heading">
+                <h3 class="order-icon"><i class="fas fa-pizza-slice"></i><span></span></h3>
+                <h2 class="feedback"></h2>
+            </div>
+            <div id="orderDetails">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <table class="table table-sm" id="orderTable">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Flavor</th>
+                                    <th scope="col">Number</th>
+                                    <th scope="col">Size</th>
+                                    <th scope="col">Crust</th>
+                                    <th scope="col">Extra Toppings</th>
+                                    <th scope="col">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ordersmade">
+                                <tr>
+                                    <td class="pizza-flavor"></td>
+                                    <td class="number"></td>
+                                    <td class="pizza-size"></td>
+                                    <td class="pizza-crust"></td>
+                                    <td class="toppings"></td>
+                                    <td class="pizzaTotal1" td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="grandtot" td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <a href="#ordersection" type="submit" name="addorder" onclick="addOrder()"
+                            class="btn  submit btn-info" id="addorder">Add Order</a>
+                        <button type="submit" name="checkout" onclick="deliveryOptions()" class="btn submit btn-dark"
+                            id="checkout">Checkout</button>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </section>
     </section>
     <script src="" async defer></script>
 </body>
