@@ -14,11 +14,11 @@ This a web app for pizza which allows users or customers to select different piz
 * Order your pizza
 
 ## Technologies Used
-Bootstrap
-Javascript
-HTML5
-Jquery
-CSS
+* Bootstrap
+* Javascript
+* HTML5
+* Jquery
+* CSS
 ## Support and contact details
 For any queries,compliments or suggestions reach me on Stevenderitu99@gmail.com
 ### License
