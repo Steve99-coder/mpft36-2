@@ -85,13 +85,13 @@ function placeOrder() {
     //limit number of checkboxes to 3
     // if(checkboxes<=3){
     if (size === "Small") {
-        var toppingsCost = checkboxes * 70;
-    }
-    else if (size === "Medium") {
         var toppingsCost = checkboxes * 100;
     }
+    else if (size === "Medium") {
+        var toppingsCost = checkboxes * 150;
+    }
     else if (size === "Large") {
-        var toppingsCost = checkboxes * 130;
+        var toppingsCost = checkboxes * 200;
     }
 
     //disable unchecked boxes

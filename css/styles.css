@@ -183,4 +183,12 @@ footer{
 #yourorder, #options, #deliveryOptions, #pickUpConfirmation, #delivery, #deliveryConfirmation{
     display: none;
 }
-
+@media only screen and (max-width: 600px) {
+    body {
+      /* background-color: red; */
+      width: 100%;
+    }
+    .floater{
+        text-align: center;
+    }
+  }
