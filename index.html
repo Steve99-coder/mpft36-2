@@ -104,6 +104,7 @@
                             <div class="form-group">
                                 <label for="pizza-size">Pizza size</label>
                                 <select class="form-control" id="pizza-size" required>
+                                    <option selected value="0">Select Size here</option>
                                     <option>Large</option>
                                     <option>Medium</option>
                                     <option>Small</option>
@@ -112,6 +113,7 @@
                             <div class="form-group">
                                 <label for="pizza-crust">Pizza Crust</label>
                                 <select class="form-control" id="pizza-crust" required>
+                                    <option selected value="0">Select Pizza here</option>
                                     <option>Gluten Free</option>
                                     <option>Pan</option>
                                     <option>Original</option>
@@ -122,8 +124,8 @@
                             </div>
                             <div class="form-group">
                                 <label for="pizza-toppings">Pick Extra Toppings Of Your Choice</label>
-                                <small class="form-text text-muted"><b>S:</b>Ksh.70 <b>M:</b>Ksh.100
-                                    <b>L:</b>Ksh.130</small>
+                                <small class="form-text text-muted"><b>S:</b>Ksh.100 <b>M:</b>Ksh.150
+                                    <b>L:</b>Ksh.200</small>
                                 <div class="row">
                                     <!-- <div class="col-md-1"></div> -->
                                     <div class="col-md-6" id="col6">
@@ -321,8 +323,8 @@
                         <p>
                         <div class="name"></div>, your order has been successfully placed!<br><br>Total amount payable
                         at the store on pickup is Ksh.<div class="totalPick"></div>.</p>
-                        <a href="#header" type="button" class="btn" onclick="reloadPage()" id="got-it"
-                            style="background-color:green">OK, Got it!</a>
+                        <a href="#header" type="button" class="btn btn-warning" onclick="reloadPage()" id="got-it"
+                           >OK, Got it!</a>
                     </div>
                 </div>
                 <div class="col-md-4"></div>
