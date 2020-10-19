@@ -171,6 +171,7 @@ ul{
 #contact-us{
     background-image: url("../img/back3.jpg");
     height: 47vh;
+    padding-bottom: 0%;
 }
 .heading1{
    text-align: center;
