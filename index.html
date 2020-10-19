@@ -67,6 +67,34 @@
             </div>
         </div>
     </section>
+    <section id="Menu">
+         <div class="Intro">
+            <h2>Pizza Delicacies</h2>
+            <p class="mb-4">Beauty comes in all shapes and sizes. Small, large, circle, square, thin crust, thick crust,
+                stuffed crust, extra toppings.</p>
+            <p> Then select toppings from our variety of delicious ingredients.</p>
+            <p>We offer you a free large pizza and 2L soda of your choice on your first purchase.</p>
+        </div>
+        <div class="row Menu1">
+            <div class="col-md-4">
+                <h3 class="d-5">PIZZA SIZE</h3>
+                <p><span class="title">Small Pizza</span>.......<span class="price">Kshs 400.00,450.00,500.00</span></p>
+                <p><span class="title">Medium Pizza</span>....... <span class="price">Kshs 650.00,700.00,800.00</span></p>
+                <p><span class="title">Large Pizza</span>.........<span class="price">Kshs 900.00,950.00,1100.00</span></p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="d-5">CRUSTS</h3>
+                <p><span class="title">Original</span>..........<span class="price">Kshs 100.00</span></p>
+                <p><span class="title">Hand Tossed</span>.........<span class="price">Kshs 150.00</span></p>
+                <p><span class="title">Glutten Free</span>...........<span class="price">Kshs 200.00</span></p>
+                <p><span class="title">Pan</span>..........<span class="price">Kshs 250.00</span></p>
+                <p><span class="title">Stuffed</span>..........<span class="price">Kshs 100.00</span></p>
+                <p><span class="title">Thin</span>..........<span class="price">Kshs 150.00</span></p>
+            </div>
+            <div class="col-md-4"></div>
+            <p class="title">Keep calm and order pizza.</p>
+        </div>
+    </section>
     <section id="order">
         <div class="container-fluid order">
             <div class="heading2">
@@ -98,7 +126,7 @@
                                     <option>Mushroom</option>
                                     <option>Original Veggie</option>
                                     <option>Oyster</option>
-                                    <option>Bbq Beef</option>   
+                                    <option>Bbq Beef</option>
                                 </select>
                             </div>
                             <div class="form-group">
@@ -145,14 +173,14 @@
                                             <input class="form-check-input" type="checkbox" name="toppings" value="Ham"
                                                 id="ham">
                                             <label class="form-check-label" for="ham">Onions</label>
-                                        </div> 
+                                        </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" name="toppings"
                                                 value="Onions" id="onions">
                                             <label class="form-check-label" for="onions">Sausage</label>
 
                                         </div>
-                                        
+
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" name="toppings"
                                                 value="Mushrooms" id="mushrooms">
@@ -172,7 +200,7 @@
                                             <label class="form-check-label" for="sausage">Black olives</label>
 
                                         </div>
-                                       
+
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" name="toppings"
                                                 value="Parmesan cheese" id="parmesan-cheese">
@@ -190,7 +218,7 @@
                                                 value="Mozarella cheese" id="mozarella-cheese">
                                             <label class="form-check-label" for="mozarella-cheese">Spinach</label>
                                         </div>
-                                       
+
                                     </div>
                                     <!-- <div class="col-md-1"></div> -->
                                 </div>
@@ -201,210 +229,210 @@
                                 </div>
                             </div>
                             <button type="submit" name="submitButton" class="btn submit btn-success" id="placeorder"><i
-                                class="fas fa-pizza-slice"></i>Place
-                            Order<i class="fas fa-spinner fa-spin" ></i></button>
+                                    class="fas fa-pizza-slice"></i>Place
+                                Order<i class="fas fa-spinner fa-spin"></i></button>
                         </form>
                     </div>
                 </div>
                 <div class="col-md-3"></div>
+            </div>
+    </section>
+    <section id="yourorder">
+        <div class="heading">
+            <h3 class="order-icon"><i class="fas fa-pizza-slice"></i><span></span></h3>
+            <h2 class="feedback"></h2>
+        </div>
+        <div id="orderDetails">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <table class="table table-sm" id="orderTable">
+                        <thead>
+                            <tr>
+                                <th scope="col">Flavor</th>
+                                <th scope="col">Number</th>
+                                <th scope="col">Size</th>
+                                <th scope="col">Crust</th>
+                                <th scope="col">Extra Toppings</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ordersmade">
+                            <tr>
+                                <td class="pizza-flavor"></td>
+                                <td class="number"></td>
+                                <td class="pizza-size"></td>
+                                <td class="pizza-crust"></td>
+                                <td class="toppings"></td>
+                                <td class="pizzaTotal1" td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="grandtot" td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <a href="#ordersection" type="submit" name="addorder" onclick="addOrder()"
+                        class="btn  submit btn-info" id="addorder">Add Order</a>
+                    <button type="submit" name="checkout" onclick="deliveryOptions()" class="btn submit btn-dark"
+                        id="checkout">Checkout</button>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
         </div>
     </section>
-        <section id="yourorder">
-            <div class="heading">
-                <h3 class="order-icon"><i class="fas fa-pizza-slice"></i><span></span></h3>
-                <h2 class="feedback"></h2>
-            </div>
-            <div id="orderDetails">
-                <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8">
-                        <table class="table table-sm" id="orderTable">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Flavor</th>
-                                    <th scope="col">Number</th>
-                                    <th scope="col">Size</th>
-                                    <th scope="col">Crust</th>
-                                    <th scope="col">Extra Toppings</th>
-                                    <th scope="col">Total</th>
-                                </tr>
-                            </thead>
-                            <tbody id="ordersmade">
-                                <tr>
-                                    <td class="pizza-flavor"></td>
-                                    <td class="number"></td>
-                                    <td class="pizza-size"></td>
-                                    <td class="pizza-crust"></td>
-                                    <td class="toppings"></td>
-                                    <td class="pizzaTotal1" td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td class="grandtot" td>
-                                </tr>
-                            </tfoot>
-                        </table>
-                        <a href="#ordersection" type="submit" name="addorder" onclick="addOrder()"
-                            class="btn  submit btn-info" id="addorder">Add Order</a>
-                        <button type="submit" name="checkout" onclick="deliveryOptions()" class="btn submit btn-dark"
-                            id="checkout">Checkout</button>
+    <br> </br>
+    <div id="options">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="jumbotron">
+                    <div id="deliveryOptions">
+                        <i class="fas fa-clock" style="font-size:80px;color:#d19438;"></i>
+                        <br>
+                        <br>
+                        <p>Your order will be ready in 30 minutes.</p>
+                        <p>Would you like to:</p>
+                        <button type="submit" name="pickup" onclick="pickUp()" class="btn btn-danger"><i
+                                class="fas fa-store"></i>
+                            Pick it Up</button> <br> <br>
+                        <button type="submit" name="deliver" onclick="delivery()" class="btn btn-danger"><i
+                                class="fas fa-truck"></i> Get it Delivered</button>
                     </div>
-                    <div class="col-md-2"></div>
                 </div>
-            </div>
-        </section>
-        <br> </br>
-        <div id="options">
-            <div class="row">
                 <div class="col-md-4"></div>
-                <div class="col-md-4">
-                    <div class="jumbotron">
-                        <div id="deliveryOptions">
-                            <i class="fas fa-clock" style="font-size:80px;color:#d19438;"></i>
+            </div>
+        </div>
+    </div>
+    <div id="delivery">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="jumbotron">
+                    <form id="deliveryDetails">
+                        <h5>Please fill the following for delivery:</h5>
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label for="location">Delivery location:</label>
+                                <input type="text" class="form-control" id="location" placeholder="Street, County"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+254 123 456789" required>
                             <br>
                             <br>
-                            <p>Your order will be ready in 30 minutes.</p>
-                            <p>Would you like to:</p>
-                            <button type="submit" name="pickup" onclick="pickUp()" class="btn btn-danger"><i
-                                    class="fas fa-store"></i>
-                                Pick it Up</button> <br> <br>
-                            <button type="submit" name="deliver" onclick="delivery()" class="btn btn-danger"><i
-                                    class="fas fa-truck"></i> Get it Delivered</button>
+                            <small style="font-size: 15px; color: wheat;">Format: +254 123 456789</small>
+                            <br>
+                            <br>
                         </div>
-                    </div>
-                    <div class="col-md-4"></div>
+                        <button type="submit" class="btn submit btn-warning" id="delivery-details"
+                            onclick="deliveryConfirm()">Deliver</button>
+                    </form>
                 </div>
             </div>
+            <div class="col-md-4"></div>
         </div>
-        <div id="delivery">
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
-                    <div class="jumbotron">
-                        <form id="deliveryDetails">
-                            <h5>Please fill the following for delivery:</h5>
-                            <div class="form-group">
-                                <div class="form-group">
-                                    <label for="location">Delivery location:</label>
-                                    <input type="text" class="form-control" id="location" placeholder="Street, County"
-                                        required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone Number:</label>
-                                <input type="tel" id="phone" name="phone" placeholder="+254 123 456789" required>
-                                <br>
-                                <br>
-                                <small style="font-size: 15px; color: wheat;">Format: +254 123 456789</small>
-                                <br>
-                                <br>
-                            </div>
-                            <button type="submit" class="btn submit btn-warning" id="delivery-details"
-                                onclick="deliveryConfirm()">Deliver</button>
-                        </form>
-                    </div>
+    </div>
+    <div id="pickUpConfirmation">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="jumbotron">
+                    <i class="fas fa-check-circle" style="font-size:80px;color:green;"></i>
+                    <br>
+                    <br>
+                    <p>
+                    <div class="name"></div>, your order has been successfully placed!<br><br>Total amount payable
+                    at the store on pickup is Ksh.<div class="totalPick"></div>.</p>
+                    <a href="#header" type="button" class="btn btn-warning" onclick="reloadPage()" id="got-it">OK, Got
+                        it!</a>
                 </div>
-                <div class="col-md-4"></div>
             </div>
+            <div class="col-md-4"></div>
         </div>
-        <div id="pickUpConfirmation">
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
-                    <div class="jumbotron">
-                        <i class="fas fa-check-circle" style="font-size:80px;color:green;"></i>
-                        <br>
-                        <br>
-                        <p>
-                        <div class="name"></div>, your order has been successfully placed!<br><br>Total amount payable
-                        at the store on pickup is Ksh.<div class="totalPick"></div>.</p>
-                        <a href="#header" type="button" class="btn btn-warning" onclick="reloadPage()" id="got-it"
-                           >OK, Got it!</a>
-                    </div>
+    </div>
+    <div id="deliveryConfirmation">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="jumbotron">
+                    <i class="fas fa-car-alt" style="font-size:80px;color:green;"></i>
+                    <br>
+                    <br>
+                    <p>
+                    <div class="name"></div>, your order has been approved.
+                    <br>
+                    <br>The delivery fee to
+                    <div class="location"></div> is Ksh.400.
+                    <br>
+                    <br>Total amount to be paid to the courier on delivery is Ksh.
+                    <div class="totalDel"></div>.
+                    <br>
+                    <br>We shall reach you on,in case there are any changes to your order:
+                    <div class="phone"></div>.</p>
+                    <a href="#header" type="button" class="btn btn-warning" onclick="reloadPage()" id="got-it">OK, Got
+                        it!</a>
                 </div>
-                <div class="col-md-4"></div>
             </div>
+            <div class="col-md-4"></div>
         </div>
-        <div id="deliveryConfirmation">
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
-                    <div class="jumbotron">
-                        <i class="fas fa-car-alt" style="font-size:80px;color:green;"></i>
-                        <br>
-                        <br>
-                        <p>
-                        <div class="name"></div>, your order has been approved.
-                        <br>
-                        <br>The delivery fee to
-                        <div class="location"></div> is Ksh.400.
-                        <br>
-                        <br>Total amount to be paid to the courier on delivery is Ksh.
-                        <div class="totalDel"></div>.
-                        <br>
-                        <br>We shall reach you on,in case there are any changes to your order:
-                        <div class="phone"></div>.</p>
-                        <a href="#header" type="button" class="btn" onclick="reloadPage()" id="got-it"
-                            >OK, Got it!</a>
-                    </div>
-                </div>
-                <div class="col-md-4"></div>
-            </div>
-        </div>
-        <section id="contact-us">
-            <div class="container mt-lg-5 text-white">
-                <div class="wrap d-md-flex">
-                    <div class="info">
-                        <h2 class="heading1">Contact us</h2>
-                        <div class="row no-gutters contact">
-                            <div class="col-md-4 d-flex mb-3">
-                                <div class="icon pr-1"><i class="fa fa-phone-volume" aria-hidden="true"></i></div>
-                                <div class="text">
-                                    <h3>+254712345678</h3>
-                                    <p>Pizza Palace</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 d-flex">
-                                <div class="icon"><i class="fa fa-map-marker-alt" aria-hidden="true"></i></div>
-                                <div class="text">
-                                    <h3>Palace Avenue,Rehema House</h3>
-                                    <p>Nairobi,Kenya</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 d-flex">
-                                <div class="icon"><i class="fa fa-clock" aria-hidden="true"></i></div>
-                                <div class="text">
-                                    <h3>Open Monday-Saturday</h3>
-                                    <p>8:00am - 9:00pm</p>
-                                    <br>
-                                    <h3>Open Saturday-Sunday</h3>
-                                    <p>9:00am - 5:00pm</p>
-                                </div>
+    </div>
+    <section id="contact-us">
+        <div class="container mt-lg-5 text-white">
+            <div class="wrap d-md-flex">
+                <div class="info">
+                    <h2 class="heading1">Contact us</h2>
+                    <div class="row no-gutters contact">
+                        <div class="col-md-4 d-flex mb-3">
+                            <div class="icon pr-1"><i class="fa fa-phone-volume" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3>+254712345678</h3>
+                                <p>Pizza Palace</p>
                             </div>
                         </div>
-                        <div class="icons">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-google"></i></a>
+                        <div class="col-md-4 d-flex">
+                            <div class="icon"><i class="fa fa-map-marker-alt" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3>Palace Avenue,Rehema House</h3>
+                                <p>Nairobi,Kenya</p>
+                            </div>
                         </div>
+                        <div class="col-md-4 d-flex">
+                            <div class="icon"><i class="fa fa-clock" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3>Open Monday-Saturday</h3>
+                                <p>8:00am - 9:00pm</p>
+                                <br>
+                                <h3>Open Saturday-Sunday</h3>
+                                <p>9:00am - 5:00pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-google"></i></a>
                     </div>
                 </div>
             </div>
-        </section>
-        <footer>
-            <div>
-                <p>@Pizza Palace 2020</p>
-            </div>
-        </footer>
-    
-    
+        </div>
+    </section>
+    <footer>
+        <div>
+            <p>@Pizza Palace 2020</p>
+        </div>
+    </footer>
+
+
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.5.1.min.js"></script>
