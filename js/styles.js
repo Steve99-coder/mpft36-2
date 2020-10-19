@@ -108,7 +108,7 @@ function placeOrder() {
     var price = (sizeCost + crustCost + toppingsCost);
     var totalPrice = parseInt(price * number);
 
-    $(".salutation").text("Hey " + name + " . Here's your order:");
+    $(".feedback").text("Hey " + name + " . Here's your order:");
     $(".pizza-size").append('<tr><td id="pizza-size">' + size);
     $(".number").append('<tr><td id="number">' + number);
     $(".pizza-crust").append('<tr><td id="pizza-crust">' + crust);
